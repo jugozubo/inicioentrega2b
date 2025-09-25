@@ -7,7 +7,7 @@ import dht
 #CLAVE ARCHIVO EN LA EEPROM 
 #Se hace con archivo .txt
 archivo=open("clave.txt","w")
-archivo.write("[7,5,3,2]")
+archivo.write("[7, 5, 3, 2]")
 archivo.close()
 
 global display
@@ -76,6 +76,7 @@ while True:
         contenido=archivo.read()
         if str(clave)==contenido:
             print("correcto")
+            sleep(5)
 
                 #print(a)
         #print("correcto")
